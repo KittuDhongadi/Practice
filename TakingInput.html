@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>User Entered Text</title>
+<script type="text/javascript">
+function Click1()
+{
+var st1 = document.getElementById("rd1");
+var st2 = document.getElementById("rd2");	
+
+if(st1.checked==true)
+	alert("Hello"+st1.value);
+else if(st2.checked==true)
+	alert("Hello"+st2.value);
+	
+else
+	alert("Hello");
+}
+</script>
+</head>
+<body>
+<input name="grp1" id="rd1" type="radio" value="SimpleSnippets">Simple Snippets</input>
+<br>
+<input name="grp1" id="rd2" type="radio" value="Learnings">Simple Learnings</input>
+<br>
+<button onclick="Click1()">ClickMe</button>
+</body>
+</html>
