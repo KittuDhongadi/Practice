@@ -4,16 +4,19 @@
 <meta charset="ISO-8859-1">
 <title>User Entered Text</title>
 <script type="text/javascript">
-
-function fnc2()
+function Click1()
 {
-	var rd11 = document.getElementById("rd1").value;
-	var rd22 = document.getElementById("rd2").value;
-	if(rd11.checked==true)
-		alert("channel selected is : ");
-	alert("hello"+rs11.value);
-}
+var st1 = document.getElementById("rd1");
+var st2 = document.getElementById("rd2");	
 
+if(st1.checked==true)
+	alert("Hello"+st1.value);
+else if(st2.checked==true)
+	alert("Hello"+st2.value);
+	
+else
+	alert("Hello");
+}
 </script>
 </head>
 <body>
@@ -21,8 +24,6 @@ function fnc2()
 <br>
 <input name="grp1" id="rd2" type="radio" value="Learnings">Simple Learnings</input>
 <br>
-document.write("Hello");
-<button onclick="fnc2()" id=btn1>Click me</button>
-document.write("Hello");
+<button onclick="Click1()">ClickMe</button>
 </body>
 </html>
